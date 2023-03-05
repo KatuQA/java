@@ -51,8 +51,11 @@ public class Person {
     public String toString() {
         return "{ " + name + " " + middleName + " " + lastName + " " + age + " " + "}";
     }
-//   public void printAge (){System.out.println("Дата рождения =" +age);
-//    }
 
-
+    public static int getYear(int age) {
+        int thisYear = 2023;
+//        LocalDate currentDate = LocalDate.now();
+//        int thisYear = currentDate.getYear();
+        return thisYear - age;
+    }
 }

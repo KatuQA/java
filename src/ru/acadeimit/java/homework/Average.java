@@ -1,9 +1,14 @@
 package ru.acadeimit.java.homework;
-
+import java.util.Scanner;
 public class Average {
     public static void main(String[] args) {
-        int a = 3; // старт
-        int b = 17;  // конец
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Введите начало диапазона: ");
+        int a = scanner.nextInt();
+
+        System.out.println("Введите конец диапазона: ");
+        int b = scanner.nextInt();
         if (a < b) {
             int countWhole = 0; // количество чисел в диапазоне
             int countEven = 0; // количество четных чисел в диапазоне
@@ -22,8 +27,8 @@ public class Average {
             System.out.println("Колличество чисел всего диапазона = " + countWhole);
             System.out.println("Сумма четных чисел диапазона = " + sumEven);
             System.out.println("Колличество четных чисел диапазона = " + countEven);
-            float avgWhole = (float) sumWhole / countWhole;      //float потому, что результат деления может быть дробным
-            float avgEven = (float) sumEven / countEven;
+            double avgWhole = (double) sumWhole / countWhole;      //float потому, что результат деления может быть дробным
+            double avgEven = (double) sumEven / countEven;
             System.out.println("Среднее арифметическое всего диапазона = " + avgWhole);
             System.out.println("Среднее арифметическое четных чисел диапазона = " + avgEven);
         } else {
