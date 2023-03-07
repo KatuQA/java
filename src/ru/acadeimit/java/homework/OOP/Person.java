@@ -1,5 +1,7 @@
 package ru.acadeimit.java.homework.OOP;
 
+import java.time.LocalDate;
+
 public class Person {
     private String name;
     private String middleName;
@@ -53,9 +55,10 @@ public class Person {
     }
 
     public static int getYear(int age) {
-        int thisYear = 2023;
-//        LocalDate currentDate = LocalDate.now();
-//        int thisYear = currentDate.getYear();
+//        int thisYear = 2023;
+        LocalDate currentDate = LocalDate.now();
+        int thisYear = currentDate.getYear();
+//        return thisYear - age;
         return thisYear - age;
     }
 }
