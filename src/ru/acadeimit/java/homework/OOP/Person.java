@@ -55,10 +55,8 @@ public class Person {
     }
 
     public static int getYear(int age) {
-//        int thisYear = 2023;
         LocalDate currentDate = LocalDate.now();
         int thisYear = currentDate.getYear();
-//        return thisYear - age;
         return thisYear - age;
     }
 }
